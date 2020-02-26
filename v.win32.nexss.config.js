@@ -10,8 +10,12 @@ languageConfig.checkSyntax = "";
 languageConfig.interactiveShell = "v";
 languageConfig.builders = {};
 languageConfig.compilers = {
-  node: {
-    install: `git clone https://github.com/vlang/v ${process.env.NEXSS_APPS_PATH}/vlang && cd ${process.env.NEXSS_APPS_PATH}/vlang && ./make.bat && nexss System/Env/EnsurePath --EnvPathAdd=${process.env.NEXSS_APPS_PATH}/vlang`,
+  websiteZip: {
+    shell: "Powershell",
+    install: `Invoke-WebRequest -Uri https://github.com/vlang/v/releases/latest/download/v_windows.zip -OutFile ${process.env.NEXSS_APPS_PATH}/vlang/v_windows.zip
+cd ${process.env.NEXSS_APPS_PATH}/vlang
+#make.bat
+#nexss System/Env/EnsurePath --EnvPathAdd=${process.env.NEXSS_APPS_PATH}/vlang`,
     command: "v",
     args: "run <file>",
     help: ``
