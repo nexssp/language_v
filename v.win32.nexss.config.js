@@ -10,12 +10,9 @@ languageConfig.checkSyntax = "";
 languageConfig.interactiveShell = "v";
 languageConfig.builders = {};
 languageConfig.compilers = {
-  websiteZip: {
-    shell: "Powershell",
-    install: `Invoke-WebRequest -Uri https://github.com/vlang/v/releases/latest/download/v_windows.zip -OutFile ${process.env.NEXSS_APPS_PATH}/vlang/v_windows.zip
-cd ${process.env.NEXSS_APPS_PATH}/vlang
-#make.bat
-#nexss System/Env/EnsurePath --EnvPathAdd=${process.env.NEXSS_APPS_PATH}/vlang`,
+  v: {
+    // shell: "Powershell",
+    install: `nexss Install/Vlang`,
     command: "v",
     args: "run <file>",
     help: ``
