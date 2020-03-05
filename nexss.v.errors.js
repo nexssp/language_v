@@ -1,3 +1,3 @@
 module.exports = {
-  "Cannot find module '(.*?)'": "nexss js install <package>"
+  "the following imports were never used:": "nexss js install <found1>"
 };
