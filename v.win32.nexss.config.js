@@ -15,15 +15,15 @@ languageConfig.builders = {};
 languageConfig.compilers = {
   v: {
     // shell: "Powershell",
-    install: `nexss Install/Vlang`,
+    install: `nexss Install/vlang.nexss`,
     command: "v",
     args: "run <file>",
-    help: ``
-  }
+    help: ``,
+  },
 };
 languageConfig.errors = require("./nexss.v.errors");
 languageConfig.languagePackageManagers = {
-  v: {}
+  v: {},
 };
 
 module.exports = languageConfig;
