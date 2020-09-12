@@ -1,4 +1,7 @@
-let languageConfig = Object.assign({}, require("../config.win32"));
+let languageConfig = Object.assign(
+  {},
+  require(`../config.${process.platform}`)
+);
 languageConfig.title = "V";
 languageConfig.description =
   "Simple, fast, safe, compiled language for developing maintainable software.";
