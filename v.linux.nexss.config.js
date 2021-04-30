@@ -10,11 +10,7 @@ languageConfig.compilers = {
   },
 };
 
-const {
-  replaceCommandByDist,
-} = require(`${process.env.NEXSS_SRC_PATH}/lib/osys`);
-
-languageConfig.compilers.v.install = replaceCommandByDist(
+languageConfig.compilers.v.install = process.replacePMByDistro(
   languageConfig.compilers.v.install
 );
 

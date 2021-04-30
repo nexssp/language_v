@@ -1,3 +1,3 @@
 module.exports = {
-  "the following imports were never used:": "nexss js install <found1>"
+  "the following imports were never used:": "nexss v install <found1>"
 };
