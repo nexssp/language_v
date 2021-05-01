@@ -26,7 +26,17 @@ languageConfig.compilers = {
 };
 languageConfig.errors = require("./nexss.v.errors");
 languageConfig.languagePackageManagers = {
-  v: {},
+  v: {
+    installation: "installed.", // V has built in functions
+    messageAfterInstallation: "",
+    installed: "v list",
+    search: "v search",
+    install: "v install",
+    install: "v update",
+    uninstall: "v remove",
+    help: "v help",
+    init: () => {},
+  },
 };
 
 module.exports = languageConfig;
