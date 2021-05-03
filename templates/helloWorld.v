@@ -5,7 +5,7 @@ import x.json2
 
 fn main() {
 	// Get stdin
-	nexss_stdin := os.get_lines_joined()
+	nexss_stdin := os.get_line()
 	
 	// Decoding json
 	raw_json := json2.raw_decode(nexss_stdin) ?
