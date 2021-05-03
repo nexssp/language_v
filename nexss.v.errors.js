@@ -7,4 +7,6 @@ module.exports = {
   ),
   "the following imports were never used:":
     "v install <found1> OR nexss v install <found1>",
+  'builder error: cannot import module "util" (not found)':
+    "Import util by: 'import v.util'",
 };
