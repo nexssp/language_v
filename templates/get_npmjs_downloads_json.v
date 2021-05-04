@@ -10,7 +10,6 @@ import json
 const (
 	base_url='https://api.npmjs.org/downloads/point/'
 )
-// import time
 
 fn make_user_url(start string, end string, user string) string {
 	return '$base_url$start:$end/$user'
