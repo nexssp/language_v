@@ -27,7 +27,7 @@ fn task(pkg string, start string, end string, user string) ?string {
 }
 
 struct Package {
-	name string
+	package string
 	downloads int
 }
 
