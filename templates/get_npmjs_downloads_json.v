@@ -37,7 +37,7 @@ fn main() {
 	end:='2036-05-03'
 	user:='@nexssp'
 
-	packages:=['cli','os','stack','min','test','const','dddebug','logdebug','packunpack','ansi']
+	packages:=['cli','os','extend','system','stack','ensure','expression-parser','min','test','const','dddebug','logdebug','packunpack','ansi']
 	mut threads := []thread ?string {}
 	for package in packages {
 		println('starting: $package')
