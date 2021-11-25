@@ -14,7 +14,18 @@ languageConfig.executeCommandLine = "v";
 languageConfig.printCommandLine = ""; //no console.log() needed to display result eg node -p "4+6"
 languageConfig.checkSyntax = "";
 languageConfig.interactiveShell = "v";
-languageConfig.builders = {};
+languageConfig.builders = {
+  v: {
+    install: `nexss Install/vlang.nexss`,
+    command: "v",
+    build: () => {
+      return "v";
+    },
+    args: `-os windows <file> && <destinationFile>`,
+    help: ``,
+  },
+};
+
 languageConfig.compilers = {
   v: {
     // shell: "Powershell",
@@ -32,7 +43,8 @@ languageConfig.languagePackageManagers = {
     installed: "v list",
     search: "v search",
     install: "v install",
-    install: "v update",
+    update: "v update",
+    up: "v up",
     uninstall: "v remove",
     help: "v help",
     init: () => {},
