@@ -9,7 +9,7 @@ fn main() {
 	nexss_stdin := os.get_lines_joined()
 	
 	// Decoding json
-	raw_json := json2.raw_decode(nexss_stdin) ?
+	raw_json := json2.raw_decode(nexss_stdin)!
 	mut nexss_stdout := raw_json.as_map()
 
 	// readData := nexss_stdout['nexss'].str() 
